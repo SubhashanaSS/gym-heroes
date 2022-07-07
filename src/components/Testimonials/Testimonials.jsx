@@ -11,7 +11,7 @@ export const Testimonials = () => {
   const tLength = testimonialsData.length;
 
   return (
-    <div className="Testimonials">
+    <div className="testimonials">
       <div className="left-t">
         <span>Testimonials</span>
         <span className="stroke-text">What they</span>
