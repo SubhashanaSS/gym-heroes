@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
+import NumberCounter from "number-counter";
 
 import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
@@ -48,15 +49,21 @@ const Hero = () => {
         {/*figures*/}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>
+              <NumberCounter end={140} start={100} delay="4" preFix="+" />
+            </span>
             <span>expert coachs</span>
           </div>
           <div>
-            <span>+978</span>
+            <span>
+              <NumberCounter end={978} start={800} delay="4" preFix="+" />
+            </span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>
+              <NumberCounter end={50} start={10} delay="4" preFix="+" />
+            </span>
             <span>fitness programs</span>
           </div>
         </div>
