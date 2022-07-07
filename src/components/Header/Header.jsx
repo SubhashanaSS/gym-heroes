@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import { Link } from "react-scroll";
 
 import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
@@ -28,11 +29,56 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li onClick={() => setMenuOpened(false)}>Home</li>
-          <li onClick={() => setMenuOpened(false)}>Programs</li>
-          <li onClick={() => setMenuOpened(false)}>Why us</li>
-          <li onClick={() => setMenuOpened(false)}>Plans</li>
-          <li onClick={() => setMenuOpened(false)}>Testamonials</li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="home"
+              spy={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="programs"
+              spy={true}
+              smooth={true}
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              spy={true}
+              smooth={true}
+            >
+              Why us
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="plans"
+              spy={true}
+              smooth={true}
+            >
+              Plans
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="testimonials"
+              spy={true}
+              smooth={true}
+            >
+              Testamonials
+            </Link>
+          </li>
         </ul>
       )}
     </div>
